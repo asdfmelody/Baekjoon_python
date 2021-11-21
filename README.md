@@ -45,3 +45,26 @@ arr = list(map(int,input().split()))
 # 출력 : >> [40, 60, 80]
 </code>
 </pre>
+
+### 1.3 round 함수
+> #### Q_4344
+> 반올림하여 소수점 셋째 자리까지 출력
+<pre>
+<code>
+result = round(float_number,3)
+</code>
+</pre>
+**round(대상값)**   
+**round(대상값, 자릿수)**     
+
+### 1.4 숫자와 함께 "%"를 출력하고 싶을때
+> #### Q_4344
+> 입력 : 70 90 80   
+> 출력 : >>33.333%
+<pre>
+<code>
+print( "%0.3f%%" % result)
+</code>
+</pre>
+세번째 자리까지 float형인 result를 문자열 "%"와 함께 출력   
+~~print(result+"%")~~
