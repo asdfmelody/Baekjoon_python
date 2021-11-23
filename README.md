@@ -21,7 +21,7 @@ set() 함수로 배열 변환하여 집합 자료형으로 만들어준다.
 ### 1.2 list 함수로 한글자씩 끊어서 배열만들기
 #### 1.2.1 문자열
 
->#### [Q_8958.py]((https://www.acmicpc.net/problem/8958))   
+>#### [Q_8958.py](https://www.acmicpc.net/problem/8958)
 >OXOOX와 같은 **문자열**을 입력받아 퀴즈 점수 구하기
 <pre><code>arr = list(input())
 
