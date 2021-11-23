@@ -68,3 +68,35 @@ print( "%0.3f%%" % result)
 </pre>
 세번째 자리까지 float형인 result를 문자열 "%"와 함께 출력   
 ~~print(result+"%")~~
+
+
+## 2. 함수
+### 2.1 정수의 각자리 숫자를 list로
+
+>#### Q_4673.py
+>양의 정수 n에 대해서 d(n)을 n과 n의 각 자리수를 더하는 함수
+<pre><code>
+intlist=list(map(int, str(a)))
+</code></pre>
+정수를 string으로 바꾸고 int 형으로 list 만들기
+
+### 2.2 길이가 정해진 리스트 만들기
+
+>#### Q_4673.py
+>10000보다 작거나 같은 셀프 넘버를 한 줄에 하나씩 출력하라
+<pre><code>
+arr=[False for i in range (10001)]
+</code></pre>
+length가 10000 인 list 만들고 모두 False 로 채움    
+[False, False, False, ..., False]
+
+### 2.3 Boolean list의 index값 이용
+
+>#### Q_4673.py
+>셀프넘버 문제
+<pre><code>
+for b in range(10000):
+    if arr[b] != True : print(b)
+</code></pre>
+arr는 boolean list이고 True가 아닌 list index를 출력한다.
+
