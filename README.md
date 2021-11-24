@@ -82,3 +82,10 @@ length가 10000 인 list 만들고 모두 False 로 채움
 </code></pre>
 arr는 boolean list이고 True가 아닌 list index를 출력한다.
 
+## 3. 문자열
+### 3.1 아스키코드와 문자
+>#### [Q_11654.py]()
+> 문자를 아스키코드로 변환하기
+<pre><code>ord('A')     >> 65  # 문자->아스키 ord()
+char('65')   >> A   # 아스키->문자 char()
+</code></pre>
