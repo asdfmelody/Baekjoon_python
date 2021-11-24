@@ -84,8 +84,15 @@ arr는 boolean list이고 True가 아닌 list index를 출력한다.
 
 ## 3. 문자열
 ### 3.1 아스키코드와 문자
->#### [Q_11654.py]()
+>#### [Q_11654.py](https://www.acmicpc.net/problem/11654)
 > 문자를 아스키코드로 변환하기
 <pre><code>ord('A')     >> 65  # 문자->아스키 ord()
 char('65')   >> A   # 아스키->문자 char()
 </code></pre>
+
+
+### 3.2 end=(" ")
+>#### [Q_10809.py](https://www.acmicpc.net/problem/10809)
+> 배열 출력시 한줄로 띄어쓰기 출력
+<pre><code>for d in range(26):
+    print(arr[d], end=(" ")) </code></pre>
