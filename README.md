@@ -104,3 +104,16 @@ char('65')   >> A   # 아스키->문자 char()
 <pre><code>for c in range(len(word)):
     result+=word[c]*int(repeat) </code></pre>
 append 이용 시 오류 메시지: ‘str’ object has no attribute ‘append’
+
+### 3.4 대문자로 변환
+>#### [Q_1157.py](https://www.acmicpc.net/problem/1157)
+> 입력데이터는 대소문자 구별X, 출력시 대문자로만 출력
+<pre><code>word=input().upper()</code></pre>
+대문자 변환 메소드는 총 **세가지**
+
+<pre><code>string.upper() #모든 알파벳 대문자로 변환
+string.capitalize() #첫 글자를 대문자로 변환
+string.title() #알파벳 외의 문자(숫자, 특수기호, 띄어쓰기 등)로 나누어져 있는 영단어들의 첫 글자를 모두 대문자로 변환 </code></pre>
+
+**소문자로 변환**하는 메소드는 한가지
+<pre><code>string.lower() #모든 알파벳 소문자로 변환</code></pre>
