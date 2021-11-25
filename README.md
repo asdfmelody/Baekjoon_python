@@ -96,3 +96,11 @@ char('65')   >> A   # 아스키->문자 char()
 > 배열 출력시 한줄로 띄어쓰기 출력
 <pre><code>for d in range(26):
     print(arr[d], end=(" ")) </code></pre>
+
+
+### 3.3 문자열은 append 대신 +=
+>#### [Q_2675.py](https://www.acmicpc.net/problem/2675)
+> +=로 문자열 연장
+<pre><code>for c in range(len(word)):
+    result+=word[c]*int(repeat) </code></pre>
+append 이용 시 오류 메시지: ‘str’ object has no attribute ‘append’
