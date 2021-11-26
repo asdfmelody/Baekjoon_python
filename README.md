@@ -45,23 +45,25 @@ set() 함수로 배열 변환하여 집합 자료형으로 만들어준다.
 **round(대상값)**   
 **round(대상값, 자릿수)**     
 
-### 1.4 숫자와 함께 "%"를 출력하고 싶을때
+### 1.4 print( "%0.3f%%" % result)
 > #### [Q_4344.py](https://www.acmicpc.net/problem/4344)
 > 입력 : 70 90 80   
 > 출력 : >>33.333%
 <pre><code>print( "%0.3f%%" % result)
 </code></pre>
+숫자와 함께 "%" 출력     
 세번째 자리까지 float형인 result를 문자열 "%"와 함께 출력   
 ~~print(result+"%")~~
 
 
 ## 2. 함수
-### 2.1 정수의 각자리 숫자를 list로
+### 2.1 list(map(int,str(a)))
 
 >#### [Q_4673.py](https://www.acmicpc.net/problem/4673)
 >양의 정수 n에 대해서 d(n)을 n과 n의 각 자리수를 더하는 함수
 <pre><code>intlist=list(map(int, str(a)))
 </code></pre>
+정수의 각 자리 숫자를 list로     
 정수를 string으로 바꾸고 int 형으로 list 만들기
 
 ### 2.2 길이가 정해진 리스트 만들기
@@ -83,7 +85,7 @@ length가 10000 인 list 만들고 모두 False 로 채움
 arr는 boolean list이고 True가 아닌 list index를 출력한다.
 
 ## 3. 문자열
-### 3.1 아스키코드와 문자
+### 3.1 아스키코드와 문자 : ord('A') char('65')
 >#### [Q_11654.py](https://www.acmicpc.net/problem/11654)
 > 문자를 아스키코드로 변환하기
 <pre><code>ord('A')     >> 65  # 문자->아스키 ord()
@@ -105,7 +107,7 @@ char('65')   >> A   # 아스키->문자 char()
     result+=word[c]*int(repeat) </code></pre>
 append 이용 시 오류 메시지: ‘str’ object has no attribute ‘append’
 
-### 3.4 대문자로 변환
+### 3.4 upper() capitalize() title()
 >#### [Q_1157.py](https://www.acmicpc.net/problem/1157)
 > 입력데이터는 대소문자 구별X, 출력시 대문자로만 출력
 <pre><code>word=input().upper()</code></pre>
@@ -117,3 +119,15 @@ string.title() #알파벳 외의 문자(숫자, 특수기호, 띄어쓰기 등)�
 
 **소문자로 변환**하는 메소드는 한가지
 <pre><code>string.lower() #모든 알파벳 소문자로 변환</code></pre>
+
+### 3.5 replace(old_str, new_str)
+>#### [Q_2941.py](https://www.acmicpc.net/problem/2941)
+> 크로아티아 알파벳 갯수 세기
+<pre><code>word=input()
+cro=['c=','c-','dz=','d-','lj','nj','s=','z=']
+
+for i in cro:
+    word = word.replace(i,'*') #word내에 cro 있다면 '*' 로 바꾸기
+print(len(word))</code></pre>
+문자열 변경    
+긴 문자열을 한덩이로 구분하여 갯수 구할때 이용 가능
