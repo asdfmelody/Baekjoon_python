@@ -62,7 +62,7 @@ set() 함수로 배열 변환하여 집합 자료형으로 만들어준다.
 >양의 정수 n에 대해서 d(n)을 n과 n의 각 자리수를 더하는 함수
 <pre><code>intlist=list(map(int, str(a)))
 </code></pre>
-**list(map(int,str(a)))**    
+**list(map(int,str(a)))**
 정수를 string으로 바꾸고 int 형으로 list 만들기
 
 ### 2.2 길이가 정해진 리스트 만들기
