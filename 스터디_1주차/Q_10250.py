@@ -9,7 +9,7 @@ for a in range(i):
     else:
         floor = n%h
         ho=int(n/h)+1
-    result.append(ho+(floor*100))
+    result.append(ho+(floor*100)) #zfill 이용
 
 for a in range(i):
     print(result[a])

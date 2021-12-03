@@ -12,3 +12,5 @@ for i in range(len(arr)):
                 break
 
 print(result)
+
+#for문 2개 -> 2제곱

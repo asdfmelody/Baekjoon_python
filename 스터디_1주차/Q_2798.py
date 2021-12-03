@@ -10,3 +10,5 @@ for i in range(len(arr)):
                 sum_arr.append(sum)
 
 print(max(sum_arr))
+
+#for문 몇개인지 확인 -> 3제곱

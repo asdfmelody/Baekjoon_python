@@ -11,3 +11,7 @@ for i in range(five+1): #0~3
 
 if len(number) >0 : print(min(number))
 else : print(-1)
+
+#greedy 방식
+
+#dp로 풀어보기
