@@ -5,7 +5,7 @@ input=sys.stdin.readline # input() -> sys.stdin.readline()
 
 N,M=map(int,input().split())
 
-dogam={} #dictionary 이용하면 list append 보다 빠름
+dogam={} #dictionary 이용하면 list append 보다 빠르고 메모리 적음
 
 for i in range(1,N+1):
     name=input().rstrip() # 문자열 입력받을때 .rstrip()
