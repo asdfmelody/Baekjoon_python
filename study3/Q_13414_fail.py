@@ -1,5 +1,5 @@
 # 수강신청
-# fail
+# fail!
 import sys
 
 input=sys.stdin.readline

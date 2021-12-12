@@ -1,5 +1,5 @@
 # IOIOI
-# 부분성공
+# 부분성공!
 
 N=int(input())
 M=int(input())

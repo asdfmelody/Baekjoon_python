@@ -1,5 +1,5 @@
 # 별자리
-# fail
+# fail!
 
 import math
 
