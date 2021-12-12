@@ -4,7 +4,7 @@ result=0
 count = 0 # 겹쳐있는 막대기 개수 (층)
 
 i=0
-while i<len(bgigar):
+while i<len(bar):
     if bar[i] == "(":
         count+=1
         if bar[i+1] ==")": # lazer
