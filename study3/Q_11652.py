@@ -11,6 +11,7 @@ for i in range(N):
     else:
         dic[num]=1
 
-sdic=sorted(dic.items(), key=lambda x: (-x[1],x[0])) # value 의 오름차순, key 의 내림차순
+sdic=sorted(dic.items(), key=lambda x: (-x[1],x[0]))
+# value 의 오름차순, key 의 내림차순
 
 print(sdic[0][0])

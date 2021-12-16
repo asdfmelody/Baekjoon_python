@@ -1,18 +1,16 @@
 # 수강신청
-# fail!
+# fail 시간초과
 import sys
-
+# import queue
 input=sys.stdin.readline
 
 K,L=map(int,input().split())
-dic={}
-for i in range(L):
+arr=[]
+for _ in range(L):
     num=input().rstrip()
-    dic[num]=i
+    if num in arr:
+        arr.remove(num) # queue는 remove하면 no! append,pop을 해야 유용
+    arr.append(num)
 
-sdic=dict(sorted(dic.items(), key=lambda x:x[1]))
-# 딕셔너리 value값으로 sort하기,,
-key=list(sdic.keys()) # key 리스트 만들기
-
-for j in range(K):
-    print(key[j])
+for i in range(K):
+    print(arr[i])
