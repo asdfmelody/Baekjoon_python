@@ -13,5 +13,4 @@ for i in range(N):
 
 sdic=sorted(dic.items(), key=lambda x: (-x[1],x[0])) # value 의 오름차순, key 의 내림차순
 
-print(sdic)
 print(sdic[0][0])
