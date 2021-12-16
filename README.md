@@ -196,4 +196,16 @@ cutRod(p, 7); # 18
 
 ### 4.3 0/1 배낭 문제
 
-
+## 5. Dictionary
+### 5.1 람다함수로 딕셔너리 정렬하기
+```python
+fruit = {'apple':5, 'grape':10, 'banana':7, 'peach':3, 'melon':2}
+sorted1= sorted(fruit.items(),key=lambda x:x[0]) # key 로 정렬
+sorted2= sorted(fruit.items(),key=lambda x:x[1]) # value 로 정렬
+```
+> ####[Q_11652.py](https://www.acmicpc.net/problem/11652)
+> 가장 많이 가지고 있는 정수를 구하는 프로그램을 작성하시오. 만약, 가장 많이 가지고 있는 정수가 여러 가지라면, 작은 것을 출력한다.
+```python
+sdic=sorted(dic.items(), key=lambda x: (-x[1],x[0]))
+# value 의 오름차순(-), key 의 내림차순
+```
