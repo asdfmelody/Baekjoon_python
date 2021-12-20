@@ -11,9 +11,9 @@ for i in range(9):
         mustbe100=0
         mustbe100=heightsum-fake_nanjang[i]-fake_nanjang[j]
         if mustbe100 == 100:
-            del fake_nanjang[i]
             del fake_nanjang[j]
-            print("found it")
+            del fake_nanjang[i]
+            #print("found it")
             break
     if mustbe100 == 100: break
 
