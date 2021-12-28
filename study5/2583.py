@@ -23,7 +23,7 @@ for x in range(M):
             count=1
             queue.append((x,y))
             while queue: # queue가 빌때 까지 반복
-                x,y=queue.popleft()
+                x,y=queue.popleft() #pop하면서 x,y에 수 할당
                 for i in range(4): # 4방향으로 위치 확인
                     nx=x+dx[i]
                     ny=y+dy[i]
