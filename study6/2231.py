@@ -14,4 +14,4 @@ for i in range(N):
         result=i
         break
 
-print(i)
+print(result)
